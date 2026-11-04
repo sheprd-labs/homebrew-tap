@@ -6,13 +6,10 @@ Homebrew tap for [Sheprd](https://sheprd.org):
 brew install sheprd-labs/tap/sheprd
 ```
 
-`brew install` resolves both formulae and casks, so `--cask` is not required.
-To install by short name and pick up updates later, tap once first:
-
-```sh
-brew tap sheprd-labs/tap
-brew install sheprd
-```
+`brew install` resolves both formulae and casks, so `--cask` is not required. Use
+the full name: it taps this repository and trusts the cask for you, which Homebrew
+requires for any non-official tap. `brew install sheprd` alone needs
+`brew trust --cask sheprd-labs/tap/sheprd` first.
 
 The cask installs `Sheprd.app`. Installs from the older `penso/tap` keep upgrading
 there as `herdr-gpui`.
